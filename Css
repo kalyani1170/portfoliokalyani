@@ -1,0 +1,220 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0;
+    color: #444;
+}
+/* Main container to center content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #77aaff;
+}
+
+@media(max-width: 768px) {
+    header nav {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    header nav ul {
+        display: block;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+/* Sections */
+section {
+    padding: 20px 0;
+}
+
+#about {
+    background: #e4e4e4;
+    color: #333;
+    text-align: center;
+}
+
+#projects, #skills {
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+
+#projects .project, #skills .skill {
+    padding: 20px;
+    margin: 20px;
+    background: #f4f4f4;
+    border: #ccc 1px solid;
+    display: inline-block;
+    width: 45%;
+    box-shadow: 2px 2px 5px #ccc;
+}
+/* Contact Section */
+#contact {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 80%;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#contact form input[type="submit"] {
+    background: #77aaff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+    background: #555;
+}
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #projects .project, #skills .skill {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    #showcase h1 {
+        font-size: 40px;
+    }
+
+    #showcase p {
+        font-size: 16px;
+    }
+}
